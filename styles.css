@@ -109,19 +109,98 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
+width:50px;
   color: var(--clr-grey-5);
+}
+select {
+  width: 20%;
+  height: 20px;
+}
+body{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.countUp {
+  width: 10px;
+}
+.hide {
+    max-height: 0 !important;
+}
+
+.dropdown {
+	border: 0.1em solid black;
+	width: 10em;
+	margin-bottom: 1em;
+}
+
+.dropdown .title {
+  color: white;
+	margin: .3em .3em .3em .3em;	
+	width: 100%;
+}
+
+.dropdown .title .fa-angle-right {
+	float: right;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.dropdown .menu {
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow: hidden;
+}
+
+.dropdown .menu .option {
+	margin: .3em .3em .3em .3em;
+	margin-top: 0.3em;
+}
+
+.dropdown .menu .option:hover {
+	background: rgba(0,0,0,0.2);
+}
+.eraseSec {
+  margin: 8px 0 0 -10px;
+}
+.pointerCursor:hover {
+	cursor: pointer;
+}
+
+.rotate-90 {
+	transform: rotate(90deg);
 }
 .container {
   display: flexbox;
-  width: 25%;
+  width: 50%;
   height: auto;
   line-break: normal;
-  padding: 20px;
+  margin: 0 0 0 15px;
+  float: left;
 }
-.form {
-  margin-left: 50px;
+.container1 {
+    font-size: 25px;
+    float: left;
+    margin: 5px 0 0 0;
+}
+.count {
+  width: 50px;
+  margin: 60px 0 0 20px;
+}
+.dropdown {
+  background-color: gray;
+  color: white;
+  margin: 0 0 0 30px;
+  position: absolute;
+  display: block;
+}
 
+.form {
+  margin: 100px 0 0 20px ;
+}
+.num {
+  width: 50px
+}
+.show {
+  margin: 0 0 0 150px;
 }
 
 @media screen and (min-width: 800px) {
