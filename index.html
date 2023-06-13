@@ -14,26 +14,48 @@
         <div class="section_area">
             <acticle class="inside">
                 <section class="sheet">
+                    <h2>List</h2>
+                    <!--Count how many thing to get-->
+                    <div class="count">
+                        <h6>Count</h6>
+                        <div class="Cbutton" type="button" style="font-size:24px"><i class="fas fa-caret-square-up"></i></div>
+                            <div class="count1"></div>
+                        <div class="Cbutton" type="button" style="font-size:24px"><i class="fas fa-caret-square-down"></i></div>
+                    </div>
+                    <!--droplist that have measureable items-->
+                    <div class="dropdown">
+                        <div class="title pointerCursor" value="selectone">Select One<i class="fa fa-angle-right"></i></div>
+                            <div class="menu pointerCursor hide">
+                                <div class="option" id="none" value="none">None</div>
+                                <div class="option" id="single" value="single">Single</div>
+                                <div class="option" id="case" value="case">Case</div>
+                                <div class="option" id="oz" value="oz">Oz</div>
+                                <div class="option" id="gallon" value="gallon">Gallon</div>
+                                <div class="option" id="liter" value="liter">Liter</div>
+                            </div>
+                    </div>
                     <!--this part have input-->
                     <div class="form">
-                        <h2>List</h2>
                         <input type="text" id="title" placeholder=" title" /><br>
                         <button type="button" class="submit-btn">submit</button>
                         <button type="button" class="erase">EraseAll</button>
                     </div>
-                    <!--droplist that have measureable items-->
-                        <h5></h5>
-                    <select id="dropList">
-                        <option>none</option>
-                        <option>single</option>
-                        <option>case</option>
-                        <option>oz</option>
-                        <option>gallon</option>
-                        <option>liter</option>
-                    </select>
-                        <!---list that show item, amounts, and sizing--->
-                        <div id="list" class="list"></div> 
+                <!---list that show item, amounts, and sizing--->
+                    <div class="show">
+                        <div class="container2">
+                            <div id="list2" class="list2"></div>
+                        </div>
+                        <div class="container1">
+                            <div id="list1" class="list1"></div> 
+                        </div>
+                        <div class="container">
+                            <div id="list" class="list"></div>
+                        </div>
+                        <button type="button" id="eraseSec" class="eraseSec">delete</button>
+                    </div>
                 </section>
             </acticle>
         </div>
             <script src="app.js"></script>
+        </body>
+    </html>
