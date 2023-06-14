@@ -101,25 +101,30 @@ function handleTitleChange(e) {
   const size = e.target.textContent
 
   result.innerHTML = size;
-  
-}
 
-
-function increase() {
-    var upButton = document.getElementById("");
-    for (let i = 0; i < 10; i++){
-      
-    }
+  console.log(size)
 
 }
 
-function decrease() {
+
+function count() {
+      const number = document.querySelector("#count1");
+      const result = document.querySelector(".list2");
+
+      number.addEventListener('input', function (){
+
+          var val = number.valueAsNumber;
+
+          console.log(typeof val, val);
+      })
+
+
 
 }
+
 
 function clearList() {
   document.querySelector("#list").textContent = " ";
 }
-
 
 
