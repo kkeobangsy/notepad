@@ -108,6 +108,9 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
+h6 {
+  font-size: 25px;
+}
 p {
 width:50px;
   color: var(--clr-grey-5);
@@ -119,17 +122,28 @@ select {
 body{
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.countUp {
-  width: 10px;
+.count {
+  width: 5px;
+  margin: 0;
+  
+}
+.count1 {
+  width: 40px;
+  margin: 10px 0 10px 90px;
+  float: left;
 }
 .hide {
     max-height: 0 !important;
 }
 
 .dropdown {
+  background-color: gray;
+  color: white;
+  margin: 4px 0 0 160px;
+  position: absolute;
+  display: block;
 	border: 0.1em solid black;
 	width: 10em;
-	margin-bottom: 1em;
 }
 
 .dropdown .title {
@@ -183,18 +197,10 @@ body{
 }
 .count {
   width: 50px;
-  margin: 60px 0 0 20px;
+  margin: 30px 0 0 20px;
 }
-.dropdown {
-  background-color: gray;
-  color: white;
-  margin: 0 0 0 30px;
-  position: absolute;
-  display: block;
-}
-
 .form {
-  margin: 100px 0 0 20px ;
+  margin: 100px 0 0 110px ;
 }
 .num {
   width: 50px
