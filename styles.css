@@ -122,10 +122,27 @@ select {
 body{
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.container {
+  display: flexbox;
+  width: 15%;
+  height: auto;
+  line-break: normal;
+  margin: 12px 0 0 15px;
+  float: left;
+}
+.container1 {
+  font-size: 25px;
+  float: left;
+  margin: 16px 0 0 0;
+}
+.container2 {
+  font-size: 32px;
+  float: left;
+  margin: 10px 20px 0 0;
+}
 .count {
-  width: 5px;
-  margin: 0;
-  
+width: 50px;
+margin: 30px 0 0 20px;
 }
 .count1 {
   width: 40px;
@@ -135,7 +152,6 @@ body{
 .hide {
     max-height: 0 !important;
 }
-
 .dropdown {
   background-color: gray;
   color: white;
@@ -173,31 +189,14 @@ body{
 	background: rgba(0,0,0,0.2);
 }
 .eraseSec {
-  margin: 8px 0 0 -10px;
+  float: left;
+  margin: 18px 0 0 0;
 }
 .pointerCursor:hover {
 	cursor: pointer;
 }
-
 .rotate-90 {
 	transform: rotate(90deg);
-}
-.container {
-  display: flexbox;
-  width: 50%;
-  height: auto;
-  line-break: normal;
-  margin: 0 0 0 15px;
-  float: left;
-}
-.container1 {
-    font-size: 25px;
-    float: left;
-    margin: 5px 0 0 0;
-}
-.count {
-  width: 50px;
-  margin: 30px 0 0 20px;
 }
 .form {
   margin: 100px 0 0 110px ;
@@ -251,10 +250,6 @@ body{
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
-}
-.container {
-  width: 200px;
-  height: 200px;
 }
 .list {
   margin-bottom: 10px;
