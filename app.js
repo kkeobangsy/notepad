@@ -43,6 +43,8 @@ function addText() {
     
     document.querySelector("#list").appendChild(item);
 
+    count();
+
     clearForm.forEach(singleInput => singleInput.value = innerHTML = "" );
 
     console.log(title);
@@ -102,7 +104,8 @@ function handleTitleChange(e) {
 
   result.innerHTML = size;
 
-  console.log(size)
+
+  console.log(size);
 
 }
 
@@ -115,9 +118,12 @@ function count() {
 
           var val = number.valueAsNumber;
 
-          console.log(typeof val, val);
+          result.innerHTML = val;
+
+          console.log(val);
       })
 
+      
 
 
 }
@@ -126,5 +132,6 @@ function count() {
 function clearList() {
   document.querySelector("#list").textContent = " ";
 }
+
 
 
