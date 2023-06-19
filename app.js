@@ -5,6 +5,8 @@ var list = document.getElementById("list");
 var clearForm = document.querySelectorAll("input");
 var clear = document.querySelector(".erase");
 var cost = document.querySelector("cost");
+const result = document.querySelector("#count1");
+var number = 0;
 const dropdownTitle = document.querySelector(".dropdown .title");
 const dropdownOptions = document.querySelectorAll(".dropdown .option");
 //var measure = document.querySelector("#dropList");
@@ -43,7 +45,6 @@ function addText() {
     
     document.querySelector("#list").appendChild(item);
 
-    count();
 
     clearForm.forEach(singleInput => singleInput.value = innerHTML = "" );
 
@@ -100,13 +101,37 @@ function handleOptionSelected(e) {
 
 function handleTitleChange(e) {
   const result = document.getElementById('list1');
-  const size = e.target.textContent
+  const size = e.target.textContent;
 
   result.innerHTML = size;
+  
 
 
   console.log(size);
 
+}
+
+function up() {
+  if (number < 12) {
+    number += 1;
+  };
+
+
+  document.querySelector("#count1").value = number;
+  
+  console.log(number);
+  
+}
+
+function down() {
+  if (number <= 0){
+    number = 0;
+  } else  {
+    number -= 1;
+  }
+  
+  document.querySelector("#count1").value = number;
+  console.log(number)
 }
 
 
@@ -114,24 +139,24 @@ function count() {
       const number = document.querySelector("#count1");
       const result = document.querySelector(".list2");
 
-      number.addEventListener('input', function (){
 
-          var val = number.valueAsNumber;
+      number.addEventListener('keypress', function (event){
+    
+        var val = number.valueAsNumber;
+        result.textContent = val;
 
-          result.innerHTML = val;
-
-          console.log(val);
       })
+      console.log(number);
 
-      
-
-
-}
+    }
 
 
 function clearList() {
   document.querySelector("#list").textContent = " ";
+
+
 }
+
 
 
 
