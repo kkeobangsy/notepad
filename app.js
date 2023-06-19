@@ -106,24 +106,24 @@ function handleTitleChange(e) {
   result.innerHTML = size;
   
 
-
   console.log(size);
 
 }
 
 function up() {
+  const text = document.getElementById("list2");
   if (number < 12) {
     number += 1;
   };
 
-
   document.querySelector("#count1").value = number;
-  
+  text.innerHTML = number;
   console.log(number);
   
 }
 
 function down() {
+  const text = document.getElementById("list2");
   if (number <= 0){
     number = 0;
   } else  {
@@ -131,6 +131,7 @@ function down() {
   }
   
   document.querySelector("#count1").value = number;
+  text.innerHTML = number;
   console.log(number)
 }
 
@@ -146,6 +147,7 @@ function count() {
         result.textContent = val;
 
       })
+      number.textContent = result;
       console.log(number);
 
     }
