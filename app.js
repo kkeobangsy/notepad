@@ -45,7 +45,7 @@ function addText() {
     
     document.querySelector("#list").appendChild(item);
 
-
+  
     clearForm.forEach(singleInput => singleInput.value = innerHTML = "" );
 
     console.log(title);
@@ -103,7 +103,7 @@ function handleTitleChange(e) {
   const result = document.getElementById('list1');
   const size = e.target.textContent;
 
-  result.innerHTML = size;
+  result.innerHTML += size;
   
 
   console.log(size);
@@ -114,24 +114,27 @@ function up() {
   const text = document.getElementById("list2");
   if (number < 12) {
     number += 1;
-  };
+  } else {
+    return;
+  }
 
-  document.querySelector("#count1").value = number;
-  text.innerHTML = number;
+ document.querySelector("#count1").value = number;
+  text.innerHTML += number;
   console.log(number);
   
 }
 
 function down() {
   const text = document.getElementById("list2");
-  if (number <= 0){
-    number = 0;
-  } else  {
+
+   if(number <= 0) {
+    return;
+  } else {
     number -= 1;
   }
   
   document.querySelector("#count1").value = number;
-  text.innerHTML = number;
+  text.textContent += number;
   console.log(number)
 }
 
@@ -147,7 +150,7 @@ function count() {
         result.textContent = val;
 
       })
-      number.textContent = result;
+      //number.textContent = result;
       console.log(number);
 
     }
@@ -158,6 +161,8 @@ function clearList() {
 
 
 }
+
+
 
 
 
