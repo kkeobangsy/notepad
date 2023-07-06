@@ -25,7 +25,6 @@ function addText() {
     const item = document.createElement("h2")
     item.textContent = document.querySelector("#title").value ;
 
-    
 
     item.addEventListener("click", () => {
       if(item.style.color != "red")
@@ -43,9 +42,8 @@ function addText() {
     })
     
     
-    document.querySelector("#list").appendChild(item);
+    document.querySelector("#list").append(item);
 
-  
     clearForm.forEach(singleInput => singleInput.value = innerHTML = "" );
 
     console.log(title);
@@ -119,13 +117,14 @@ function up() {
   }
 
  document.querySelector("#count1").value = number;
-  text.innerHTML += number;
+  text.innerHTML += " " + number;
   console.log(number);
   
 }
 
 function down() {
-  const text = document.getElementById("list2");
+ const text = document.getElementById("list2");
+ document.querySelector("#count1").value = number;
 
    if(number <= 0) {
     return;
@@ -133,8 +132,8 @@ function down() {
     number -= 1;
   }
   
-  document.querySelector("#count1").value = number;
-  text.textContent += number;
+  
+  text.innerHTML += " " + number;
   console.log(number)
 }
 
@@ -143,13 +142,18 @@ function count() {
       const number = document.querySelector("#count1");
       const result = document.querySelector(".list2");
 
-
-      number.addEventListener('keypress', function (event){
-    
-        var val = number.valueAsNumber;
-        result.textContent = val;
-
+      const num = document.createElement("h8");
+      num.innerHTML = number.value;
+      
+      result.append(num);
+      number.addEventListener("keydown", function(e){
+        if (e.keyCode === "Enter") {
+          e.preventDefault();
+          submit.click();
+        }
       })
+
+
       //number.textContent = result;
       console.log(number);
 
@@ -161,7 +165,6 @@ function clearList() {
 
 
 }
-
 
 
 
