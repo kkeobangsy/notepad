@@ -22,15 +22,15 @@ dropdownTitle.addEventListener("click", toggleMenuDisplay);
 function addText() {
   const title = document.getElementById("title").value;
 
-    const item = document.createElement("h2")
-    item.textContent = document.querySelector("#title").value ;
+    const item = document.createElement("h6");
+    item.textContent = title;
 
 
     item.addEventListener("click", () => {
       if(item.style.color != "red")
       item.style.color = "red"
         else 
-           item.style.color = "black"
+     item.style.color = "black"
           
   
     })
@@ -45,6 +45,7 @@ function addText() {
     document.querySelector("#list").append(item);
 
     clearForm.forEach(singleInput => singleInput.value = innerHTML = "" );
+
 
     console.log(title);
   
@@ -69,6 +70,8 @@ function toggleDisplay(elem) {
   } else {
     elem.style.display = 'none';
   }
+
+
 }
 
 function toggleMenuDisplay(e){
@@ -100,9 +103,9 @@ function handleOptionSelected(e) {
 function handleTitleChange(e) {
   const result = document.getElementById('list1');
   const size = e.target.textContent;
+  const letter = document.createElement("h7");
 
-  result.innerHTML += size;
-  
+ result.innerHTML += size;
 
   console.log(size);
 
@@ -146,13 +149,8 @@ function count() {
       num.innerHTML = number.value;
       
       result.append(num);
-      number.addEventListener("keydown", function(e){
-        if (e.keyCode === "Enter") {
-          e.preventDefault();
-          submit.click();
-        }
-      })
 
+      number.addEventListener('key')
 
       //number.textContent = result;
       console.log(number);
@@ -165,6 +163,8 @@ function clearList() {
 
 
 }
+
+
 
 
 
