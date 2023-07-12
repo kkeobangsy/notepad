@@ -86,16 +86,6 @@ img {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
-}
 h1 {
   font-size: 3rem;
 }
@@ -106,13 +96,19 @@ h3 {
   font-size: 1.25rem;
 }
 h4 {
+ letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
   font-size: 0.875rem;
 }
 h6 {
   font-size: 25px;
+  margin: 0 0 3px 0;
 }
 p {
-width:50px;
+  width:50px;
   color: var(--clr-grey-5);
 }
 select {
@@ -124,21 +120,24 @@ body{
 }
 .container {
   display: flexbox;
-  width: 15%;
+  width: 5%;
   height: auto;
-  line-break: normal;
-  margin: 12px 0 0 5px;
+  margin: 15px 0 0 -45px;
   float: left;
 }
 .container1 {
-  font-size: 25px;
+  width: 5%;
+  height: auto;
+  font-size: 22px;
   float: left;
-  margin: 16px 0 0 -25px;
+  margin: 15px 0 0 -110px;
 }
 .container2 {
-  font-size: 32px;
+  width: 5px;
+  border: 5%;
+  font-size: 22px;
   float: left;
-  margin: 10px 20px 0 -60px;
+  margin: 15px 20px 0 -130px;
 }
 .count {
   width: 40px;
@@ -154,7 +153,7 @@ body{
   margin: 0 0 0 6px;
 }
 .count1 {
-  width: 25px;
+  width: 22px;
   margin: 0 0 4px 2.5px;
 }
 .hide {
@@ -172,7 +171,7 @@ body{
 
 .dropdown .title {
   color: white;
-	margin: .3em .3em .3em .3em;	
+	margin: .2em .2em .2em .2em;	
 	width: 100%;
 }
 
@@ -181,24 +180,21 @@ body{
 	margin-right: .7em;
 	transition: transform .3s;
 }
-
 .dropdown .menu {
 	transition: max-height .5s ease-out;
 	max-height: 20em;
 	overflow: hidden;
 }
-
 .dropdown .menu .option {
 	margin: .3em .3em .3em .3em;
 	margin-top: 0.3em;
 }
-
 .dropdown .menu .option:hover {
 	background: rgba(0,0,0,0.2);
 }
 .eraseSec {
   float: left;
-  margin: 18px 0 0 80px;
+  margin: 18px 0 0 100px;
 }
 .pointerCursor:hover {
 	cursor: pointer;
@@ -207,14 +203,16 @@ body{
 	transform: rotate(90deg);
 }
 .form {
-  margin: 100px 0 0 110px ;
+  margin: 100px 0 0 0;
 }
 .num {
   width: 50px
 }
 .show {
+  width: 100%;
   margin: 0 0 0 150px;
 }
+
 
 @media screen and (min-width: 800px) {
   h1 {
